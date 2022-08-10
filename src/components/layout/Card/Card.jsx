@@ -11,7 +11,7 @@ const Card = ({ city, onClose, id }) => {
       <MinMax>{city.min} °C</MinMax>
       <MinMax>{city.max} °C</MinMax>
       <Img
-        src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
+        src={`https://openweathermap.org/img/wn/${city.img}@2x.png`}
         alt="clima"
       ></Img>
     </Cards>
