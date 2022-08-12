@@ -17,11 +17,11 @@ export const Container = styled.div`
 
 export const SpanText = styled.span`
   &:nth-child(1) {
-    margin-left: 4.5rem;
+    margin-left: 4rem;
     @media screen and (max-width: 450px) {
       display: grid;
       justify-self: center;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
   &:nth-child(2) {
@@ -34,4 +34,9 @@ export const StyledLink = styled(Link)`
   font-weight: 500;
   text-decoration: none;
   font-size: 1.5rem;
+  @media screen and (max-width: 280px) {
+    font-size: 1rem;
+    display: flex;
+    align-self: center;
+  }
 `;

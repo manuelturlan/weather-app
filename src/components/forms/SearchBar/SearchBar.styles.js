@@ -18,6 +18,13 @@ export const InputButton = styled.input`
   font-weight: 600;
   grid-column: 2 / 3;
   cursor: pointer;
+  @media screen and (max-width: 280px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 0.8rem;
+    justify-self: start;
+  }
 `;
 
 export const InputText = styled.input`
@@ -30,5 +37,10 @@ export const InputText = styled.input`
   @media screen and (max-width: 450px) {
     justify-self: end;
     width: 80%
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 0.8rem;
+    width: 60%;
+    justify-self: center;
   }
 `;

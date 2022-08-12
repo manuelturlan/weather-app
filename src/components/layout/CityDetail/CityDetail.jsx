@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import {
   CardContainer,
-  Title,
   SubTitle,
   Text,
   CityInfo,
@@ -24,25 +23,24 @@ const CityDetail = ({ city }) => {
   if (theCity) {
     return (
       <CardContainer>
-        <Title>Detalles de la ciudad</Title>
         <CityInfo>
           <SubTitle>Ciudad </SubTitle>
-          <SubTitle>Latitud </SubTitle>
-          <SubTitle>Longitud </SubTitle>
-          <SubTitle>Viento </SubTitle>
-          <SubTitle>Nubes </SubTitle>
           <Text>{theCity.name}</Text>
+          <SubTitle>Latitud </SubTitle>
           <Text>{theCity.latitud}</Text>
+          <SubTitle>Longitud </SubTitle>
           <Text>{theCity.longitud}</Text>
+          <SubTitle>Viento </SubTitle>
           <Text>{theCity.wind}</Text>
-          <Text>{theCity.clouds}</Text>
+          <SubTitle>Nubes </SubTitle>
+          <Text>{theCity.clouds}</Text>  
         </CityInfo>
       </CardContainer>
     );
   } else {
     return (
       <CardContainer>
-        <Title>No se encontró ninguna ciudad</Title>
+        <h1>No se encontró ninguna ciudad</h1>
       </CardContainer>
     )
   }
