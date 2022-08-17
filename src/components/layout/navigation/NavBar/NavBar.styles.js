@@ -23,6 +23,9 @@ export const SpanText = styled.span`
       justify-self: center;
       font-size: 1rem;
     }
+    @media screen and (max-width: 280px) {
+      width: 60%;
+    }
   }
   &:nth-child(2) {
     display: none;
@@ -34,9 +37,4 @@ export const StyledLink = styled(Link)`
   font-weight: 500;
   text-decoration: none;
   font-size: 1.5rem;
-  @media screen and (max-width: 280px) {
-    font-size: 1rem;
-    display: flex;
-    align-self: center;
-  }
 `;

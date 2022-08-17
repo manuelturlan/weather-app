@@ -19,11 +19,7 @@ export const InputButton = styled.input`
   grid-column: 2 / 3;
   cursor: pointer;
   @media screen and (max-width: 280px) {
-    font-size: 0.8rem;
-  }
-  @media screen and (max-width: 280px) {
-    font-size: 0.8rem;
-    justify-self: start;
+    font-size: 1rem;
   }
 `;
 
@@ -36,11 +32,11 @@ export const InputText = styled.input`
   width: 90%;
   @media screen and (max-width: 450px) {
     justify-self: end;
-    width: 80%
+    width: 80%;
   }
-  @media screen and (max-width: 280px) {
+  /* @media screen and (max-width: 280px) {
     font-size: 0.8rem;
     width: 60%;
     justify-self: center;
-  }
+  } */
 `;
