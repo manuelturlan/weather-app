@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/layout/navigation/NavBar/NavBar";
-import About from "./components/layout/navigation/About/About";
 import Cards from "./components/Cards/Cards";
 import CityDetail from "./components/layout/CityDetail/CityDetail";
 
@@ -61,7 +60,6 @@ function App() {
       <NavBar onSearch={onSearch}></NavBar>
       <Routes>
         <Route path="/" element={<Cards cities={cities} onClose={onClose}></Cards>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
         <Route path="/ciudad/:id" element={<CityDetail city={cities}></CityDetail>}></Route>
       </Routes>
     </React.Fragment>

@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from '../../../forms/SearchBar/SearchBar';
+import SearchBar from './SearchBar/SearchBar'
 import { Container, StyledLink, SpanText } from './NavBar.styles.js'
 
 
